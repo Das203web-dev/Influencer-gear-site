@@ -114,10 +114,12 @@ body {
 }
 
 .sub-container-svg-logo {
-    width: 1010px;
+    /* width: 1010px;
     height: 110px;
-    margin-left: 255px;
-    margin-right: 235px;
+    margin-left: 200px; */
+    /* margin-right: 235px; */
+    margin-top: 80px;
+    text-align: center;
 }
 
 .sub-container-svg-logo svg {
@@ -161,14 +163,21 @@ popular section style
     padding-bottom: 10px;
     margin-bottom: 30px;
     justify-content: center;
+    overflow: hidden;
+
 
 }
 
 .products-container img {
-    width: 300px;
-    height: 256px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    margin: 17px 15px 16px 14px;
+    /* margin: 17px 15px 16px 14px; */
+}
+
+.products-container img:hover {
+    transform: scale(1.2);
+    transition: transform 1s ease-in 0.3s;
 }
 
 .products-container>h3 {
@@ -202,6 +211,7 @@ popular section style
 #see-more-btn {
     /* margin-left: 1175px; */
     text-align: right;
+    margin-right: 135px;
 }
 
 #see-more-btn a {
@@ -503,7 +513,8 @@ Featured Products section style
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
     body {
-        background-color: orange;
+        background-color: #8b857c8c;
+        margin: 0px;
     }
 
     .menu-container {
@@ -540,7 +551,57 @@ Featured Products section style
         text-align: center;
     }
 
-    /* .sub-container>h1 {
+    .sub-container p {
         text-align: center;
-    } */
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .sub-container-svg-logo {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .sub-container-svg-logo svg {
+        margin-left: 0px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /*---------------------------------------------------
+    ----------------------------------------------
+    popular-collection-section media query styles start 
+    ----------------------------------------------
+    -----------------------------------------------------*/
+
+    .popular-collection-section {
+        margin-left: 0px;
+    }
+
+    .popular-collection-section h2 {
+        margin-right: 0px;
+    }
+
+    .popular-collection-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    #see-more-btn {
+        text-align: center;
+    }
+
+    .featured-products-container {
+        display: flex;
+        text-align: center;
+        margin-bottom: 120px;
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
 }
