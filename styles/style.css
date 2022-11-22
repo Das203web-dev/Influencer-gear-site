@@ -25,8 +25,8 @@ body {
 .sub-menu-container a {
     text-decoration: none;
     color: black;
-    -webkit-text-stroke-width: thick;
-    letter-spacing: 0.2em;
+    /* -webkit-text-stroke-width: thick; */
+    font-weight: bold;
     margin-right: 10px;
 }
 
@@ -352,7 +352,7 @@ Featured Products section style
 
     .sub-menu-container li {
         margin-right: 0px;
-        letter-spacing: 1px;
+        font-weight: bold;
     }
 
     /* .sub-menu-container i {
@@ -492,4 +492,55 @@ Featured Products section style
     .featured-products-container-btn {
         margin-bottom: 50px;
     }
+}
+
+
+/*---------------------------------------
+--------------------------------
+ responsive styles for tab or ipad start
+----------------------------- --
+-----------------------------------------*/
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    body {
+        background-color: orange;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    .sub-menu-container ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+    }
+
+    .sub-menu-container a {
+        margin-right: 30px;
+    }
+
+    /*--------------------------------------------
+     influencer-section style for tab or ipad
+    -------------------------------------------- */
+    .container {
+        display: flex;
+        margin-left: 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sub-container {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /* .sub-container>h1 {
+        text-align: center;
+    } */
 }
