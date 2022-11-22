@@ -26,14 +26,15 @@ body {
     text-decoration: none;
     color: black;
     /* -webkit-text-stroke-width: thick; */
-    font-weight: bold;
-    margin-right: 10px;
+
+    margin-right: 20px;
 }
 
 .sub-menu-container li {
     list-style: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* margin-right: 20px; */
+    font-weight: bold;
 }
 
 .sub-menu-container li:hover {
@@ -44,7 +45,7 @@ body {
 }
 
 #sub-menu-container-icon {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 #sub-menu-container-icon:hover {
